@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site sobre a estrutura semântica do HTML5 e suas abordagens.">
+    <title>Sobre estrutura semântica | HTML</title>
+
+    <style>
+        body {
+            background-color: #1d1d1d;
+            font-family: sans-serif;
+            color: white;
+        }
+        header{
+            background-color: brown;
+            padding: 15px;
+        }
+
+        section{
+            border: 4px solid blue;
+            background-color: darkblue;
+            padding: 20px ;
+        }
+
+        footer{
+            background-color: tan;
+            padding: 10px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    
+    <!-- header - representa o cabeçalho de uma pagína ou de uma seção. -->
+    <header>
+        <h1>Logo</h1>
+
+        <!-- nav/navigation = representa uma área de navegação -->
+        <nav>
+            
+            <!-- Agrupamos os itens de navegação dentro de uma lista por conta de acessibilidade. -->
+            <ul>
+                <li><a href="">Tópico 1</a></li>
+                <li><a href="">Tópico 2</a></li>
+                <li><a href="">Tópico 3</a></li>
+            </ul>
+
+            <!-- <a href="/">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="Contato.html">Contato</a> -->
+        </nav>
+    </header>
+
+    <!-- Main/Principal - representa o conteúdo principal da pagína. Uma pagína deve ter apenas UM CONTEÚDO PRINCIPAL. -->
+    <main>
+        <!-- Section - representa uma seção temática genérica de um documento ou aplicativo, usada para agrupar conteúdos relacionados que compartilham um mesmo assunto.-->
+        <section>
+            <h2>Projetos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quis ex asperiores praesentium, porro eius soluta voluptates rerum aspernatur neque delectus, molestias iste repudiandae quia! Maxime iusto fugiat tempore exercitationem!</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quis ex asperiores praesentium, porro eius soluta voluptates rerum aspernatur neque delectus, molestias iste repudiandae quia! Maxime iusto fugiat tempore exercitationem!</p>
+        </section>
+
+        <section>
+            <h2>Contato</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis veniam ea iure sit autem eum eaque quos expedita, quaerat sunt ipsa voluptas quam non, dolores dignissimos porro. Deserunt, minus!</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis veniam ea iure sit autem eum eaque quos expedita, quaerat sunt ipsa voluptas quam non, dolores dignissimos porro. Deserunt, minus!</p>
+        </section>
+
+        <section>
+            <h2>Últimos artigos</h2>
+                <!-- article/artigo - Representa um conteúdo que faz sentido de maneira independente. -->
+            <article>
+                <h3>Aprendendo HTML</h3>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos excepturi asperiores quia ipsam molestiae aperiam ea modi, nobis culpa laudantium cupiditate aspernatur, ab quae minus, ut eum. Soluta, saepe repellat.</P>
+            </article>
+
+            <article>
+                <h3>Aprendendo CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quisquam dolore magnam perferendis? Rem totam unde aut, amet facilis saepe eligendi in quae consequuntur dolores quam natus dolorem. Ducimus, unde.</p>
+            </article>
+
+            <article>
+                <h3>Aprendendo JS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quas harum aliquid optio error necessitatibus, deleniti iure porro ab similique repellat sint eos, officia ad dicta quibusdam iusto, natus aspernatur.</p>
+            </article>
+            <!-- aside - representa conteúdo relacionado, mas não essencial ao conteúdo principal -->
+            <aside>
+                <h2>Artigos Relacionados</h2>
+                <nav>
+                    <ul>
+                        <li><a href="Aprenda-java.HTML">Aprenda-java</a></li>
+                        <li><a href="Domine-react.HTML">Domine-react</a></li>
+                        <li><a href="explore-ux-ui.HTML">explore-ux-ui</a></li>
+                    </ul>
+                </nav>
+
+                <article>
+                    <header>
+                        <h3>Meu artigo</h3>
+                    </header>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, sapiente perferendis quasi corrupti molestias quod doloribus, sequi sed quisquam modi suscipit, porro veritatis sunt. Voluptate soluta assumenda minima dolor? Enim.</p>
+
+                    <footer>
+                        <p>Publicado por DH</p>
+                    </footer>
+                </article>
+            </aside>
+        </section>
+    </main>
+
+    <!-- footer - representa o rodapé de uma PAGÍNA OU SEÇÃO. -->
+    <footer>
+        <p>&copy;2026 - Davi Henrique</p>
+        <address>
+            <a href="mailto:davihsc18@gmail.com"></a>
+            <a href="tel:+551197874759">Tel:(11) 9 1787-4759 </a>
+            <p>Rua Ali, Número 19 - São paulo - SP</p>
+        </address>
+
+        <nav>
+            <ul>
+                <li><a href="/">Página Inicial</a></li>
+                <li><a href="/">Página de carreiras</a></li>
+                <li><a href="/">Sobre a empresa</a></li>
+                <li><a href="/">Termos e privacidade</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

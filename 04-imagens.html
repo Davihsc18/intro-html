@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre imagens | HTML</title>
+</head>
+
+<body>
+    <h1>Trabalhando com imagens</h1>
+    <hr>
+
+    <p>Trablhando com o elemento de &lt;img&gt;</p>
+    <img src="paisagem.jpg" alt="linda paisagem com um mar muito bonito e único." width="500">
+
+
+
+    <p>Entendendo os atributos: </p>
+    <ul>
+        <li><strong>src</strong>Source/fonte: É o caminho onde a imagem está hospedada/armazenada. Pode ser um caminho
+            local ou um link direito da internet. </li>
+
+        <li><strong>alt</strong>: alt/alternative. É uma breve descrição da imagem. É crucial para
+            <strong>Acessibilidade</strong> e como fallback(Plano B).
+        </li>
+    </ul>
+
+    <h2>Trabalhando com recursos externos</h2>
+    <p>Configurando imagens externas</p>
+
+    <img src="https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Linda imagem de uma pessoa admirando o céu cheio de estrelas e no escuro da noite." 
+        
+        height="350">
+
+        
+        <h2>Outras abordagens</h2>
+        <h3>Elemento figure</h3>
+        <figure>
+            <img src="paisagem.jpg" alt="linda paisagem com um mar muito bonito e único." width="500">
+
+            <figcaption>paisagem bela e unica - Foto: Davi Henrique</figcaption>
+        </figure>
+
+        <h3>Elemento picture</h3>
+        <p>Utilizamos o elemnto &lt;picture&gt; serve para controlarmos qual arquivo será utilizado de acordo com determidadas condições.</p>
+
+        <picture>
+            <source media="(max-widht: 600px)" srcset="https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+            <source media="min-width: 601px" srcset="paisagem.jpg">
+
+
+            <!-- img como fallback(plano B) - Caso não seja possivel utilizar alguma imagem configurada no source acime, o navegador entrega a imagem do img.  -->
+            <img src="paisagem.jpg" alt="linda paisagem com um mar muito bonito e único." width="500">
+        </picture>
+
+        <hr>
+        <h2>Sobre os tipos de imagens</h2>
+        <p>Você pode encontrar um acervo muito grande de tipos de imagens. A escolha da imagem certa pode elevar a performace do seu site. Veja a lista abaixo:</p>
+        <ul>
+            <li><strong>JPEG/JPG</strong>: Bom para fotografias, produtos fotograficos, imagens com muitas cores e detalhes. Se você tebtar otimizar demais, a perda de qualidade se torna visível.</li>
+            
+            <li><strong>PNG</strong>: Suporta transparência e é muito bom para imagens que precisam preservar certos detalhes, como por exemplo: logos, imagens que precisam de transparência e etc.</li>
+
+            <li><strong>WEBP</strong>: Formato desenvolvido com foco na web. Além de Suportar transparência, também consegue trabalhar com imagens em alta definição. Execelente escolha para fotografias, imagens de produtos, imagens com transparência e imagens gerais.</li>
+
+            <li><strong>AVIF</strong>: É um Formato mais recente e também muito eficiente. É Execelente, para fotografias, imagens grandes, sites onde desempenho e economia de dados extremamente importantes.</li>
+
+            <li><strong>SVG</strong>: É um elemento vetorial, excelente para logos, ícones e etc.</li>
+        </ul>
+
+      
+</body>
+
+</html>
